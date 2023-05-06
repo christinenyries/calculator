@@ -53,7 +53,7 @@ const submit = (operation: '/' | 'x' | '-' | '+' | '+/-' | '%') => {
     default:
       evaluatePending()
 
-      // then add new pending operationg
+      // then add new pending operation
       pendingOperation.value = operations[operation]
       areOperandsMissing.value = true
       previous.value = current.value
